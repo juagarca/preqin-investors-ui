@@ -1,0 +1,33 @@
+.inverstors-table {
+  text-align: left;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.inverstors-table th,
+.inverstors-table td {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.inverstors-table thead {
+  color: white;
+  background: rgb(34, 93, 113);
+}
+
+.inverstors-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.inverstors-table tbody > tr {
+  cursor: pointer;
+}
+
+.inverstors-table tbody > tr:hover {
+  background: #9899a2;
+}
+
+.investors-dropdown {
+  width: 100%;
+}
