@@ -1,3 +1,4 @@
+import Investor from "./Investor/Investor";
 import Investors from "./Investors/Investors";
 
-export { Investors };
+export { Investor, Investors };

@@ -1,3 +1,13 @@
+type AssetClass = "pe" | "pd" | "re" | "inf" | "nr" | "hf";
+
+interface ICommitmentInfo {
+  id: number;
+  asset_class: AssetClass;
+  firm_id: number;
+  currency: string;
+  amount: string;
+}
+
 interface IInvestor {
   firm_id: number;
   firm_name: string;
@@ -12,4 +22,4 @@ interface IInvestor {
   postal_code: string;
 }
 
-export type { IInvestor };
+export type { AssetClass, ICommitmentInfo, IInvestor };

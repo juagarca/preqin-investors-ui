@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { IInvestor } from "../../types";
+import { AssetClass, ICommitmentInfo, IInvestor } from "../../types";
 
 const apiCall = async <Type>(path: string) => {
   const url = `${process.env.REACT_APP_API_URL}/${path}`;
@@ -13,9 +13,17 @@ const apiCall = async <Type>(path: string) => {
   }
 };
 
+const fetchCommitmentInfo = async (
+  assetClass: AssetClass,
+  investorId: string
+) => {
+  const path = `api/investor/commitment/${assetClass}/${investorId}`;
+  return apiCall<ICommitmentInfo[]>(path);
+};
+
 const fetchInvestors = async () => {
   const path = `api/investors`;
   return apiCall<IInvestor[]>(path);
 };
 
-export { fetchInvestors };
+export { fetchCommitmentInfo, fetchInvestors };

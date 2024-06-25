@@ -1,0 +1,21 @@
+.commitment-info-table {
+  text-align: left;
+  width: fit-content;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.commitment-info-table th,
+.commitment-info-table td {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.commitment-info-table thead {
+  color: white;
+  background: rgb(34, 93, 113);
+}
+
+.commitment-info-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
