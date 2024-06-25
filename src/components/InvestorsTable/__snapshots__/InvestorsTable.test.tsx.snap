@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestorsTable matches the snapshot 1`] = `
+<DocumentFragment>
+  <table
+    class="inverstors-table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Firm ID
+        </th>
+        <th>
+          Firm Name
+        </th>
+        <th>
+          Type
+        </th>
+        <th>
+          Date added
+        </th>
+        <th>
+          Address
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        dataset-firm-id="2670"
+        dataset-firm-name="Mjd Jedi fund"
+      >
+        <td>
+          2670
+        </td>
+        <td>
+          Mjd Jedi fund
+        </td>
+        <td>
+          Bank
+        </td>
+        <td>
+          8th June 2010
+        </td>
+        <td>
+          29 Nathan Road, Hong Kong
+        </td>
+      </tr>
+      <tr
+        dataset-firm-id="2792"
+        dataset-firm-name="Ibx Skywalker ltd"
+      >
+        <td>
+          2792
+        </td>
+        <td>
+          Ibx Skywalker ltd
+        </td>
+        <td>
+          Asset manager
+        </td>
+        <td>
+          21st July 1997
+        </td>
+        <td>
+          19 Fifth Avenue, New York
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

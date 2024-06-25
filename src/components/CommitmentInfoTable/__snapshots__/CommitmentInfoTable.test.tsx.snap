@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommitmentInfoTable matches the snapshot 1`] = `
+<DocumentFragment>
+  <table
+    class="commitment-info-table"
+  >
+    <thead>
+      <tr>
+        <th>
+          ID
+        </th>
+        <th>
+          Currency
+        </th>
+        <th>
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          34728
+        </td>
+        <td>
+          HKD
+        </td>
+        <td>
+          6M
+        </td>
+      </tr>
+      <tr>
+        <td>
+          90806
+        </td>
+        <td>
+          EUR
+        </td>
+        <td>
+          20M
+        </td>
+      </tr>
+      <tr>
+        <td>
+          90682
+        </td>
+        <td>
+          GBP
+        </td>
+        <td>
+          58M
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

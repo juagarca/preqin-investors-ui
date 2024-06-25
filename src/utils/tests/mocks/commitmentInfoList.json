@@ -1,0 +1,23 @@
+[
+  {
+    "id": 34728,
+    "asset_class": "pe",
+    "firm_id": 2670,
+    "currency": "HKD",
+    "amount": "6M"
+  },
+  {
+    "id": 90806,
+    "asset_class": "pe",
+    "firm_id": 2670,
+    "currency": "EUR",
+    "amount": "20M"
+  },
+  {
+    "id": 90682,
+    "asset_class": "pe",
+    "firm_id": 2670,
+    "currency": "GBP",
+    "amount": "58M"
+  }
+]
