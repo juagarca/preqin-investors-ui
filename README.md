@@ -31,7 +31,7 @@ cd preqin-investors-ui
 3. Install the dependencies
 
 ```bash
-npm install
+npm ci
 ```
 
 4. Create environment file
@@ -46,7 +46,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Install the project dependencies.
+Install the project dependencies when no package.lock is available.
 
 ### `npm start`
 
@@ -80,3 +80,27 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Deployment configuration
+
+### Overview
+
+Our deployment process is designed to be automated using GitHub Actions. Each time a push is made to the repository, a GitHub Actions workflow is triggered. This workflow handles several tasks to ensure the integrity and readiness of the code for production.
+
+### Workflow Steps
+
+- Installing Dependencies:
+
+The workflow begins by installing all the necessary dependencies required for the project. This ensures that the environment is set up correctly and all required libraries and tools are available.
+
+- Running Unit Tests:
+
+After installing dependencies, the workflow runs a series of unit tests. These tests check the functionality of the code to ensure that recent changes have not introduced any new bugs or issues.
+
+- Building Production Artifact:
+
+Once the tests pass, the workflow proceeds to build the production artifact. This artifact is a compiled or packaged version of the project, optimized for deployment to a production environment.
+
+### Deployment Step
+
+Currently, the deployment step in the workflow is not configured. This is because the necessary infrastructure for deploying the application is not available.
