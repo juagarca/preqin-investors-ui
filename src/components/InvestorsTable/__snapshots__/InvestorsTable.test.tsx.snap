@@ -25,10 +25,7 @@ exports[`InvestorsTable matches the snapshot 1`] = `
       </tr>
     </thead>
     <tbody>
-      <tr
-        dataset-firm-id="2670"
-        dataset-firm-name="Mjd Jedi fund"
-      >
+      <tr>
         <td>
           2670
         </td>
@@ -45,10 +42,7 @@ exports[`InvestorsTable matches the snapshot 1`] = `
           29 Nathan Road, Hong Kong
         </td>
       </tr>
-      <tr
-        dataset-firm-id="2792"
-        dataset-firm-name="Ibx Skywalker ltd"
-      >
+      <tr>
         <td>
           2792
         </td>

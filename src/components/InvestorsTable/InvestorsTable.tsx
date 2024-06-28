@@ -1,5 +1,3 @@
-import { MouseEventHandler } from "react";
-
 import { IInvestor } from "../../types";
 import { capitalize, formatDate } from "../../utils/helpers";
 
@@ -7,7 +5,7 @@ import "./styles.css";
 
 interface InvestorsTableProps {
   investors: IInvestor[];
-  handleRowClick: MouseEventHandler<HTMLTableRowElement>;
+  handleRowClick: (id: number, name: string) => void;
 }
 
 const InvestorsTable = ({ investors, handleRowClick }: InvestorsTableProps) => (
@@ -35,7 +33,7 @@ const InvestorsTable = ({ investors, handleRowClick }: InvestorsTableProps) => (
 
 interface TableRowProps {
   investor: IInvestor;
-  handleRowClick: MouseEventHandler<HTMLTableRowElement>;
+  handleRowClick: (id: number, name: string) => void;
 }
 
 const TableRow = ({ investor, handleRowClick }: TableRowProps) => {
@@ -48,7 +46,7 @@ const TableRow = ({ investor, handleRowClick }: TableRowProps) => {
   } = investor;
 
   return (
-    <tr onClick={handleRowClick} dataset-firm-id={id} dataset-firm-name={name}>
+    <tr onClick={() => handleRowClick(id, name)}>
       <td>{id}</td>
       <td>{name}</td>
       <td>{capitalize(type)}</td>

@@ -21,11 +21,7 @@ const Investors = () => {
   if (isLoading) return <div>Loading...</div>;
   if (error || !investors) return <div>Error!</div>;
 
-  const handleRowClick = (event: React.MouseEvent) => {
-    const row = event.currentTarget;
-    const firmId = row.getAttribute("dataset-firm-id");
-    const firmName = row.getAttribute("dataset-firm-name");
-
+  const handleRowClick = (firmId: number, firmName: string) => {
     navigate(`${ROUTES.investors}/${firmId}`, {
       state: { firmName: firmName },
     });
